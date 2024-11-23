@@ -48,6 +48,7 @@ class RacingCar extends Car {
         System.out.println("將賽車編號設為" + this.course);
     }
 
+    @Override
     public void show() {
         System.out.println("賽車的車號是" + this.num);
         System.out.println("汽油量是" + this.gas);
