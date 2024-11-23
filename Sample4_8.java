@@ -1,13 +1,12 @@
 public class Sample4_8 {
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car();
+        Car[] cars = new Car[2];
 
-        Car car3;
-        car3 = car1;
+        cars[0] = new Car();
+        cars[1] = new RacingCar();
 
-        System.out.println("car1與car2相同" + car1.equals(car2));
-        System.out.println("car1與car3相同" + car1.equals(car3));
+        for (int i = 0; i < cars.length; i++)
+            System.out.println("第" + (i + 1) + "個物件的類別是" + cars[i].getClass());
     }
 }
 
@@ -19,5 +18,11 @@ class Car {
         this.num = 0;
         this.gas = 0.0;
         System.out.println("生產了車子");
+    }
+}
+
+class RacingCar extends Car {
+    public RacingCar() {
+        System.out.println("生產了賽車");
     }
 }
