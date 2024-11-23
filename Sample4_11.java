@@ -6,10 +6,10 @@ public class Sample4_11 {
         vc[1] = new Plane(232);
 
         for (int i = 0; i < vc.length; i++) {
-            if (vc[i] instanceof Car)
+            if (vc[i].getClass() == Car.class)
                 System.out.println("第" + (i + 1) + "個物件是Car類別");
             else
-                System.out.println("第" + (i + 1) + "個物件是Car類別");
+                System.out.println("第" + (i + 1) + "個物件不是Car類別");
         }
     }
 }
