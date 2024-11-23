@@ -26,6 +26,7 @@ class Car implements iVehicle {
         System.out.println("生產了車號為" + this.num + "，汽油量為" + this.gas + "的車子");
     }
 
+    @Override
     public void show() {
         System.out.println("車號是" + this.num);
         System.out.println("汽油量是" + this.gas);
@@ -40,6 +41,7 @@ class Plane implements iVehicle {
         System.out.println("生產了" + this.flight + "班次的飛機");
     }
 
+    @Override
     public void show() {
         System.out.println("飛機的班次是" + this.flight);
     }

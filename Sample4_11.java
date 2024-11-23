@@ -35,6 +35,7 @@ class Car extends Vehicle {
         System.out.println("生產了車號為" + this.num + "，汽油量為" + this.gas + "的車子");
     }
 
+    @Override
     public void show() {
         System.out.println("車號是" + this.num);
         System.out.println("汽油量是" + this.gas);
